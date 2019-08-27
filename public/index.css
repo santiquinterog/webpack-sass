@@ -1,3 +1,25 @@
-body {
-  background-color: yellow; }
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em; }
+
+.main-menu, .main-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-menu__item {
+  list-style: none; }
+
+.main-menu__link {
+  text-decoration: none; }
 

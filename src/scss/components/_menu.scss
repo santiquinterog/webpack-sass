@@ -1,0 +1,23 @@
+@mixin innNav($heigth) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $heigth;
+}
+
+@mixin innMenu($color) {
+    &, ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+}

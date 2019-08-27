@@ -1,3 +1,24 @@
-body {
-    background-color: yellow;
+
+@import "./base/reset";
+@import "./components/menu";
+
+// $colors: hsl(0, 100, 50);
+
+// @for $i from 1 through 360 {
+//     $colors: append($colors, hsl($i, 100, 50), comma)
+// }
+
+// .main {
+//     background: radial-gradient($colors);
+//     min-height: 100vh;
+// }
+
+$heigth: 4em;
+
+.main-nav {
+    @include innNav($heigth);
+}
+
+.main-menu {
+    @include innMenu();
 }

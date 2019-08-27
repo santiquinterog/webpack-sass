@@ -3,6 +3,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+  devServer: {
+    port: 3000
+  },
   entry: {
     index: path.join(__dirname, 'src/index.js') 
   },
